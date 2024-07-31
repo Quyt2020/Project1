@@ -1,6 +1,6 @@
 #include <reg51.h>
 
-#define kam P0
+#define k P0
 
 void lcd_init();
 void lcd_data(unsigned char);
@@ -45,7 +45,7 @@ void lcd_init()
 
 void lcd_data(unsigned char dat)  
 {  
-    kam = dat;  
+    k = dat;  
     rs = 1;  
     rw = 0;  
     en = 1;  
@@ -55,7 +55,7 @@ void lcd_data(unsigned char dat)
 
 void lcd_cmd(unsigned char cmd)  
 {  
-    kam = cmd;  
+    k = cmd;  
     rs = 0;  
     rw = 0;  
     en = 1;  
