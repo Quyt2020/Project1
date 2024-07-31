@@ -16,7 +16,7 @@ void main()
     {
         for(i = 0; i < 10; i++)
         {
-						P2 = m[i];  
+	    P2 = m[i];  
             for(j = 0; j < 32800; j++);
         }
     }
